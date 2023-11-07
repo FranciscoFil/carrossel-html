@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient( black, red, black);
+    
+}
+body h1, p{
+    color: white;
+    text-align: center;
+}
+/* carrossel manual */
+
+div.carrossel-automatico{
+    width: 80vw;
+    height: 700px;
+    overflow: hidden;
+    margin: auto;
+}
+
+div.carrossel-automatico img{
+    width: 80vw;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+
+div.carrossel-1{
+    display: flex;
+    transform: translateX(0);
+    position: relative;
+}
+
+/* carrossel automatico */
+
+div.carrossel-manual{
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+div.carrossel-manual img{
+    object-fit: cover;
+    width: 80vw;
+    height: 100vh;
+    border-radius: 3rem;
+    position: relative;
+}
+
+div#carrossel-2{
+    display: flex;
+    transition: 1s;
+    transform: translateX(0);
+}
+
+.direita, .esquerda{
+    position: absolute;
+    font-size: 3rem;
+    cursor: pointer;
+    color: inherit;
+    top: 45%; 
+}
+.esquerda{
+    left: 0;
+}
+.direita{
+    right: 0;
+}
+
+div.posicao{
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+}
+
+button{
+    padding: 1rem 2rem;
+    background: linear-gradient(black,red);
+    color: white;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: none;
+    margin-left: 45%;
+}
